@@ -1,0 +1,540 @@
+
+/*classes gerais*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+
+html,body{
+    width: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+.center{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/*cabeçalho*/
+header{
+    width: 100%;
+    height: 90vh;
+    max-height: 900px;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../imagens/capa.png');
+}
+
+.logo{
+    margin-top: 20px;
+    margin-left: 2%;
+    float: left;
+    width: 160px;
+    height: 40px;
+    background-image: url('../imagens/logo.png');
+    background-repeat: no-repeat;
+    background-size:contain ;
+}
+/*Menus*/
+.menu-desktop{
+    margin-top: -40px;
+    float: right;
+}
+
+.menu-desktop ul li{
+    display: inline-block;
+    padding-right: 15px;
+}
+
+.menu-desktop ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 300;
+}
+
+.menu-mobile{
+    display: none;
+    opacity: 0;
+    transition: 5s;
+}
+
+.menu-mobile-icon{
+    display: none;}
+
+.menu-mobile ul li{
+    width: 90%;    
+    text-align: center;
+    margin: 5px auto;
+    padding: 5px 0;
+    border: 1px solid black;
+    background-color: white;
+    list-style: none;
+}
+
+.menu-mobile ul li:hover{
+    cursor: pointer;
+    background-color:rgb(200,200,200);
+}
+.menu-mobile > ul > li > a{
+
+    color: black;
+    font-weight: 300;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.menu-mobile-icon{
+    background-image: url('../imagens/menu.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    float: right;
+    top: -40px;
+    right: 20px;
+}
+
+.menu-mobile-icon:hover ~ .menu-mobile{
+    opacity: 1;
+}
+
+/*container-texto-header*/
+
+.container-text-header{
+    color: white;
+    max-width: 600px;
+    width: 100%;
+    float: right;
+    position: relative;
+    top: 150px;
+    right: 30px;
+
+}
+
+.container-text-header h2{
+    font-weight: 300;
+    font-size: 40px;
+}
+
+.container-text-header p{
+    font-size: 15px;
+}
+
+/*sessao1*/
+
+.sessao1{
+    width: 100%;
+    height: 400px;
+    background-color: #472562;
+}
+
+.texto-sessao1{
+    width: 50%; 
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    left: 20%
+}
+
+.texto-sessao1 h2{
+    padding-top:40px;
+    color: white;
+    font-weight: 300;
+    font-size: 26px;
+}
+
+.texto-sessao1 p{
+    margin-top: 15px;
+    font-size: 15px;
+    color: white;
+}
+
+.texto-sessao1 ul{
+    
+    padding-left: 18px;
+}
+.texto-sessao1 ul li{
+    color: white;
+    padding-top: 8px;
+}
+
+.texto-sessao1 .btn1{
+    margin-top: 15px;
+    width: 165px;
+    height: 44px;
+    font-size: 13px;
+    font-weight: 300;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    border: 0 solid transparent;
+    background-color: #FF703D;
+    line-height: 44px;
+    text-align: center;
+}
+
+.imagem-sessao1{
+    max-width: 500px;
+    float: right;
+    width: 50%;
+    height: 430px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('../imagens/device.png');
+    position: relative;
+    bottom: 30px;
+    right: 30px;
+
+}
+
+/*sessao2*/
+.sessao2 .center{
+    max-width: 1000px;
+}
+.sessao2 h2 {
+    text-align: center;
+    margin: 0 auto;
+    color: #472663;
+    margin-top: 40px;
+}
+
+.sessao2 p{
+
+    padding-top: 25px;
+    margin: 0 auto;
+    max-width: 900px;
+    width: 80%;
+    text-align: justify;
+}
+
+.sessao2 img{
+    position: relative;
+    top: 70px;
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+/*sessao3*/
+.sessao3 .parte1{
+
+    width: 50%;
+    background-color: #835FA7;
+    color: white;
+    float: left;
+    padding-top: 140px;
+    padding-bottom: 107px;
+}
+
+.sessao3 .parte1 .texto-parte1{
+    max-width: 600px;
+    padding: 0 30px;
+    float: right;
+}
+
+.sessao3 .parte1 .texto-parte1 h2{
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.sessao3 .parte1 .texto-parte1 p{
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.sessao3 .parte2 {
+    width: 50%;
+    padding: 140px 0 90px 0;
+    float: right;
+}
+
+.sessao3 .parte2 .container-parte2{ 
+    padding: 0 30px;
+}
+.sessao3 .parte2 .nome-cargo h2{
+    font-weight: 400;
+}
+.sessao3 .parte2 .nome-cargo p{
+    font-size: 14px;
+    font-weight: 300;
+}
+.sessao3 .parte2 .img{
+    width: 40px;
+    height: 40px;
+    background-color: gray;
+    border-radius: 20px;
+    position: relative;
+    top: -54px;
+    left: 175px;
+}
+.sessao3 .parte2 .texto-parte2 {
+    position: relative;
+    top: -25px;
+    max-width: 600px;
+}
+.sessao3 .parte2 .texto-parte2 p{
+    font-weight: 300;
+}
+
+.sessao3 .parte2 .slide{
+    position: relative;
+    top: -25px;
+    
+}
+
+.sessao3 .parte2 .slide div{
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: rgb(170,170,170);
+    display: inline-block;
+}
+.sessao3 .parte2 .slide div:nth-last-child(3){
+    background-color: rgb(120,120,120);
+}
+
+/*sessao4*/
+.sessao4{
+    background-color: #472563;
+    width: 100%;
+    display: inline-block;
+    padding-bottom: 60px;
+}
+.sessao4 .parte1{
+    width: 50%;
+    float: left;
+}
+.sessao4 .parte1 form{
+    width: 500px;
+    padding-left: 2%;
+    max-width: 630px;
+    padding: 0 auto;
+    margin: 0 auto;
+}
+.sessao4 .parte1 form h2{
+    color: white;
+    font-weight: 300;
+    padding-top: 60px;
+}
+.sessao4 .parte1 form p{
+    color: white;
+    max-width: 410px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.sessao4 .parte1 form input[type=text]{
+    width: 90%;
+    height: 55px;
+    padding-left: 10px;
+    max-width: 480px;
+    margin-bottom: 8px;
+}
+
+.sessao4 .parte1 form textarea{
+    width: 90%;
+    padding: 10px 0 0 10px;
+    max-width: 480px;
+    margin-bottom: 8px;;
+}
+
+.sessao4 .parte1 form input[type=submit]{
+    margin-bottom: 15px;
+    width: 165px;
+    height: 44px;
+    font-size: 19px;
+    font-weight: 300;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    border: 0 solid transparent;
+    background-color: #FF703D;
+}
+
+.sessao4 .parte2{
+    float: right;
+    margin: 0;
+    width: 50%;
+    height: auto;
+}
+
+
+.sessao4 .parte2 .container-mapa {
+
+    max-width: 480px;
+    max-height: 480px;
+    height: 100vh;
+    width: auto;
+}
+
+.sessao4 .parte2 h2{
+
+    padding-top: 55px;
+    padding-bottom: 20px;
+    color: white;
+    font-weight: 300;
+}
+
+.sessao4 .parte2 .container-mapa .mapa{
+    height: 100%;
+    width: 100%;
+    margin: 2%;
+    padding-bottom: 20px;
+}
+
+/*footer*/
+footer {
+    background-color: #192123;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+}
+
+footer h2{
+    font-weight: 300;
+    font-size: 14px;
+}
+footer p{
+    font-weight: 300;
+    font-size: 14px;
+}
+
+/*media screens*/
+
+@media screen and (max-width: 930px){
+    .sessao4 .parte1 form{
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 768px){
+    /*cabeçalho*/
+    /*Menus*/
+    .menu-desktop{
+        display: none;
+    }
+
+    .menu-mobile{
+        display: block;
+    }
+
+    .menu-mobile-icon{
+        display: block;
+    }
+
+    .menu-mobile-icon:hover ~ .menu-mobile{/*o ~ serve para informar que quando o mouse for passado sobre o 
+        menu-mobile-icon a estilização será aplicada ao menu-mobile. */
+        opacity: 1;
+    }
+
+    /*sessao1*/
+    .sessao1{
+        height: 340px;
+    }
+    .texto-sessao1{
+        width: 100%;
+        position: initial;
+        text-align: center;
+    }
+
+    .texto-sessao1 h2{
+        width: 100%;
+    }
+
+    .texto-sessao1 p{
+        width: 100%;
+    }
+
+    .texto-sessao1 ul{
+        padding-left: 18px;
+    }
+    .texto-sessao1 ul li{
+        margin: 0 auto;
+        list-style: none;
+    }
+
+    .btn1{
+        display: block;
+        margin-left:calc(50% - 82.5px)
+    }
+
+    .imagem-sessao1{
+        display: none;
+    }
+
+    /*sessao4*/
+    .sessao4{
+        text-align: center;
+    }
+    .sessao4 .parte1{
+        width: 100%;
+    }
+    .sessao4 .center .parte1 form p{
+        max-width: none;
+        width: 100%;
+        text-align: center;
+    }
+    .sessao4 .parte2{
+        width: 100%;
+    }
+    .sessao4 .parte2 h2{
+        padding-top:15px;
+    }
+    .sessao4 .parte2 .container-mapa{
+        margin: 0 auto;
+    }
+    
+
+
+    /*container-text-header*/
+    .container-text-header{
+        margin-left: 3%;
+        max-width: 600px;
+        width: 90%;
+        position: relative;
+        top: 0;
+        right: 30px;
+    }
+}
+
+
+@media screen and (max-width: 580px){
+    /*sessao2*/
+    .sessao2 img{
+        position: relative;
+        top: 20px;
+
+    }
+
+    /*sessao3*/
+    .sessao3 .parte1{
+        padding: 25px 0;
+        width: 100%;
+    }
+    .sessao3 .parte2{
+        padding: 25px 0;
+        width: 100%;
+    }
+
+@media screen and (max-height: 768px){
+
+    header{
+        height: 100vh;
+    }
+
+    .container-text-header{
+        margin: 0;
+    }
+}
